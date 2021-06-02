@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Tetris Trans</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-contact">
+            <section class="container">
+               <div class="header-contact-info">
+                   <div class="header-tip">
+                       10 років безпечних перевезень
+                   </div>
+                   <div class="contact-area">
+                       <a class="phone-number" href="tel:+38(096)5001111">
+                           <img src="../images/icon-tel.png" alt="icon">
+                           <span>(096)500-11-11</span>
+                           <span class="triangle"></span>
+                       </a>
+                       <a href="url:Замовити дзвінок">Замовити дзвінок</a>
+                       <button class="order-btn">
+                           <img src="../images/vans-button.png" alt="vans">
+                           <span>Замовити переїзд</span>
+                       </button>
+                       <button class="btn-language">
+                           ua
+                       </button>
+                   </div>
+               </div>
+            </section>
+        </div>
+        <div class="header-navigation">
+            <section class="container">
+                <div class="menu-navigation">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../images/tetris-trans.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="navigation">
+                        <li>
+                            <a href="#">Головна</a>
+                        </li>
+                        <li>
+                            <a href="#">Переїзд</a>
+                        </li>
+                        <li>
+                            <a class="active"href="#">Перевезення</a>
+                        </li>
+                        <li>
+                            <a href="#">Ціни</a>
+                        </li>
+                        <li>
+                            <a href="#">Статті</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="wrapper-breakpoint-767">
+            <ul class="logo-tetris">
+                <li>
+                    <img src="../images/tetris-trans.png" alt="logo">
+                </li>
+            </ul>
+            <ul class="languages-btm">
+               <li>
+                   <div class="dropdown">
+                       <button class="btn-language">ua</button>
+                       <div class="dropdown-content">
+                           <a href="#">ENG</a>
+                           <a href="#">РУС</a>
+                       </div>
+                   </div>
+               </li>
+            </ul>
+            <ul class="tel-menu">
+                <li>
+                    <div class="dropdown">
+                        <button class="button"><a href="#">
+                            <img src="../images/tel.png" alt="tel">
+                        </a></button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    <a class="phone-number" href="tel:+38(93)180-30-09">
+                                        <img src="../images/icon-tel.png" alt="icon">
+                                        <span>+380(93)180-30-09</span>
+                                        <img class="viber" src="../images/viber.png" alt="viber">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="phone-number" href="tel:+380(66)180-30-09">
+                                        <img src="../images/vodafone.png" alt="icon">
+                                        <span>+380(66)180-30-09</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="phone-number" href="tel:+380(66)180-30-09">
+                                        <img src="../images/kyivstar.png" alt="icon">
+                                        <span>+380(96)180-30-09</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="phone-number" href="mail:info@tetristrans.com.ua">
+                                        <img src="../images/mail.png" alt="icon">
+                                        <span>info@tetristrans.com.ua</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="order-btn">
+               <li>
+                   <button class="order-btn">
+                       <img src="../images/vans-button.png" alt="vans">
+                   </button>
+               </li>
+            </ul>
+            <div class="wrapper-burger-menu">
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
+                <ul class="mobile-menu-navigation">
+                    <li class="wrapper-border">
+                        <a href="#">Головна</a>
+                    </li>
+                    <li id="mobile-accordion">
+                        <a href="#">Переїзд</a>
+                        <div>
+                            <ul class="dropdown-links">
+                                <li>
+                                    <a href="#">Квартирный переезд</a>
+                                </li>
+                                <li>
+                                    <a href="#">Офисный переезд</a>
+                                </li>
+                                <li>
+                                    <a href="#">Дачный переезд</a>
+                                </li>
+                                <li>
+                                    <a href="#">Переезд дома</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#">Перевезення</a>
+                        <div>
+                            <ul class="dropdown-links">
+                                <li>
+                                    <a href="#">Грузовое закси</a>
+                                </li>
+                                <li>
+                                    <a href="#">Грузоперевозки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Перевозка мебели</a>
+                                </li>
+                                <li>
+                                    <a href="#">Перевозка техники</a>
+                                </li>
+                                <li>
+                                    <a href="#">Перевозка вещей</a>
+                                </li>
+                                <li>
+                                    <a href="#">Вывоз строительного мусора</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Ціни</a>
+                    </li>
+                    <li>
+                        <a href="#">Статті</a>
+                    </li>
+                    <li class="wrapper-border">
+                        <a href="#">Контакти:</a>
+                        <ul>
+                            <li>
+                                <a class="mail" href="#">info@tetristrans@.com.ua</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <section class="container">
+                <div class="banner-content">
+                    <h1>Обеспечим безупречный переезд
+                        квартиры, дома или офиса</h1>
+                    <h3>С гарантией сохранности вещей!</h3>
+                    <p>Квартирные и офисные переезды <a href="#">под ключ</a>.<br>
+                        Приедем за 50 минут.
+                    </p>
+                    <form class="contact-form" action="#">
+                       <div class="form-group">
+                           <input type="text" id="Name" placeholder="Name" name="name..." value="">
+                       </div>
+                       <div class="form-group">
+                           <input type="tel" id="tel" placeholder="+ 38 (___) ___ - __ - __" name="tel" value="">
+                       </div>
+                        <div class="form-group-checkbox">
+                            <input type="checkbox" id="indeterminate">
+                            <label for="indeterminate"> Нажимая на эту кнопку вы даете согласие<br>
+                                на <a href="#">обработку персональных данных</a></label>
+                        </div>
+                        <button class="btn">Заказать звонок</button>
+                    </form>
+                </div>
+                <img class="banner-img" src="../images/man.png" alt="man">
+            </section>
+        </div>
+        <section class="container">
+            <div class="offers-section">
+                <h1>Специальные предложения от Tetris Trans</h1>
+                <div class="stock-photo">
+                    <img src="../images/stock-1.png" alt="stock-1">
+                    <img src="../images/stock-2.png" alt="stock-2">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="security">
+                <h1>
+                    Безпека Вашого переїзду - Найважливіше Для Нас!
+                </h1>
+                <p>
+                    С другой стороны реализация намеченных плановых заданий
+                    в значительной степени обуславливает.
+                </p>
+            </div>
+            <div class="reminder">
+                <div class="reminder-text-photo">
+                    <ul class="reminder-text">
+                        <li>
+                            <img src="../images/watch.png" alt="watch">
+                            <p>
+                                - Не следует, однако забывать, что дальнейшее
+                                развитие различных форм деятельности
+                                обеспечивает широкому кругу
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../images/vans.png" alt="vans">
+                            <p>
+                                - Не следует, однако забывать, что дальнейшее
+                                развитие различных форм деятельности
+                                обеспечивает широкому кругу
+                            </p>
+                        </li>
+                        <li>
+                            <img src="../images/ten.png" alt="ten">
+                            <p>
+                                - Не следует, однако забывать, что дальнейшее
+                                развитие различных форм деятельности
+                                обеспечивает широкому кругу
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="button-holder">
+                        <button class="btn">Получить предложение</button>
+                    </div>
+                </div>
+                <div class="loader">
+                    <img src="../images/loader.png" alt="loader">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="transportation">
+                <h2>
+                    Tetris Trans - все виды грузоперевозки
+                </h2>
+            <ul class="transportation-list">
+                    <li class="first-line">
+                       <img src="../images/layer.png" alt="layer">
+                       <div class="text">
+                           <h3>Квартирный переезд</h3>
+                           <p>
+                               Значимость этих проблем настолько очевидна, что укрепление и
+                               развитие структуры требуют от нас анализа позиций, занимаемых
+                               участниками <p class="invisible">отношении поставленных задач. Идейные соображения
+                           высшего порядка, а также дальнейшее развитие задач.</p>
+                           </p>
+                       </div>
+                    </li>
+                    <li class="second-line">
+                        <div class="text">
+                            <h3>Офисный переезд</h3>
+                            <p>
+                                Значимость этих проблем настолько очевидна, что укрепление и
+                                развитие структуры требуют от нас анализа позиций, занимаемых
+                                участниками в отношенииp <p class="invisible"> поставленных задач. Идейные соображения
+                            высшего порядка, а также дальнейшее развитие задач.</p>
+                            </p>
+                        </div>
+                        <img src="../images/layer-2.png" alt="layer">
+                    </li>
+                    <li class="first-line">
+                        <img src="../images/layer-3.png" alt="layer">
+                        <div class="text">
+                            <h3>Переезд дома</h3>
+                            <p>
+                                Значимость этих проблем настолько очевидна, что
+                                укрепление и развитие структуры требуют от нас
+                                анализа позиций, занимаемых участниками в
+                                отношении поставленных задач. Идейные соображения
+                                высшего порядка, а также дальнейшее развитие задач.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="second-line">
+                        <div class="text">
+                            <h3>Дачный переезд</h3>
+                            <p>
+                                Значимость этих проблем настолько очевидна, что укрепление и
+                                развитие структуры требуют от нас анализа позиций, занимаемых
+                                участниками в отношении поставленных задач. Идейные соображения
+                                высшего порядка, а также дальнейшее развитие задач.
+                            </p>
+                        </div>
+                        <img src="../images/layer-4.png" alt="layer">
+                    </li>
+                    <li class="first-line">
+                        <img src="../images/layer-5.png" alt="layer">
+                        <div class="text">
+                            <h3>Упаковочный материал</h3>
+                            <p>
+                                Значимость этих проблем настолько очевидна, что
+                                укрепление и развитие структуры требуют от нас
+                                анализа позиций, занимаемых участниками в
+                                отношении поставленных задач. Идейные соображения
+                                высшего порядка, а также дальнейшее развитие задач.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container">
+            <div class="car-park">
+                <h1>Наш автопарк і вартість послуг</h1>
+                <div class="car-park-list">
+                    <div class="car-item">
+                        <div class="car-item-content">
+                            <div class="car-img">
+                                <img src="../images/mercedes.png" alt="mercedes">
+                            </div>
+                            <h3>Мінібус</h3>
+                            <h4>Характеристики</h4>
+                            <p>
+                                Обсяг кузова до 5 м.куб<br>
+                                Довжина - 2,4 м, ширина - 1,5 м, висота - 1,5 м<br>
+                                Вантажопідйомність – до 0,7 т
+                            </p>
+                            <h4>Ціни</h4>
+                            <p>
+                                Вартість години – 150 грн.<br>
+                                Мінімальне замовлення по Киеву 450 грн. (2 години +<br>
+                                подача з точки А в точку В). Доп.точка 100 грн.<br>
+                                Виїзд за КиЇв — 7,5 гр/км кругорейс
+                            </p>
+                        </div>
+                        <div class="button-area">
+                            <button class="btn">Зробити замовлення</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-content">
+                            <div class="car-img">
+                                <img src="../images/mercedes-2.png" alt="mercedes">
+                            </div>
+                            <h3>Мінібус</h3>
+                            <h4>Характеристики</h4>
+                            <p>
+                                Обсяг кузова до 5 м.куб<br>
+                                Довжина - 2,4 м, ширина - 1,5 м, висота - 1,5 м<br>
+                                Вантажопідйомність – до 0,7 т
+                            </p>
+                            <h4>Ціни</h4>
+                            <p>
+                                Вартість години – 150 грн.<br>
+                                Мінімальне замовлення по Киеву 450 грн. (2 години +<br>
+                                подача з точки А в точку В). Доп.точка 100 грн.<br>
+                                Виїзд за КиЇв — 7,5 гр/км кругорейс
+                            </p>
+                        </div>
+                        <div class="button-area">
+                            <button class="btn">Зробити замовлення</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-content">
+                            <div class="car-img">
+                                <img src="../images/mercedes-3.png" alt="mercedes">
+                            </div>
+                            <h3>Мінібус</h3>
+                            <h4>Характеристики</h4>
+                            <p>
+                                Обсяг кузова до 5 м.куб<br>
+                                Довжина - 2,4 м, ширина - 1,5 м, висота - 1,5 м<br>
+                                Вантажопідйомність – до 0,7 т
+                            </p>
+                            <h4>Ціни</h4>
+                            <p>
+                                Вартість години – 150 грн.<br>
+                                Мінімальне замовлення по Киеву 450 грн. (2 години +<br>
+                                подача з точки А в точку В). Доп.точка 100 грн.<br>
+                                Виїзд за КиЇв — 7,5 гр/км кругорейс
+                            </p>
+                        </div>
+                        <div class="button-area">
+                            <button class="btn">Зробити замовлення</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-content">
+                            <div class="car-img">
+                                <img src="../images/mercedes-4.png" alt="mercedes">
+                            </div>
+                            <h3>Мінібус</h3>
+                            <h4>Характеристики</h4>
+                            <p>
+                                Обсяг кузова до 5 м.куб<br>
+                                Довжина - 2,4 м, ширина - 1,5 м, висота - 1,5 м<br>
+                                Вантажопідйомність – до 0,7 т
+                            </p>
+                            <h4>Ціни</h4>
+                            <p>
+                                Вартість години – 150 грн.<br>
+                                Мінімальне замовлення по Киеву 450 грн. (2 години +<br>
+                                подача з точки А в точку В). Доп.точка 100 грн.<br>
+                                Виїзд за КиЇв — 7,5 гр/км кругорейс
+                            </p>
+                        </div>
+                        <div class="button-area">
+                            <button class="btn">Зробити замовлення</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-content">
+                            <div class="car-img">
+                                <img src="../images/mens.png" alt="mercedes">
+                            </div>
+                            <h3>Мінібус</h3>
+                            <h4>Характеристики</h4>
+                            <p>
+                                Обсяг кузова до 5 м.куб<br>
+                                Довжина - 2,4 м, ширина - 1,5 м, висота - 1,5 м<br>
+                                Вантажопідйомність – до 0,7 т
+                            </p>
+                            <h4>Ціни</h4>
+                            <p>
+                                Вартість години – 150 грн.<br>
+                                Мінімальне замовлення по Киеву 450 грн. (2 години +<br>
+                                подача з точки А в точку В). Доп.точка 100 грн.<br>
+                                Виїзд за КиЇв — 7,5 гр/км кругорейс
+                            </p>
+                        </div>
+                        <div class="button-area">
+                            <button class="btn">Зробити замовлення</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-content">
+                            <div class="car-img">
+                                <img src="../images/packaging.png" alt="mercedes">
+                            </div>
+                            <h3>Мінібус</h3>
+                            <h4>Характеристики</h4>
+                            <p>
+                                Обсяг кузова до 5 м.куб<br>
+                                Довжина - 2,4 м, ширина - 1,5 м, висота - 1,5 м<br>
+                                Вантажопідйомність – до 0,7 т
+                            </p>
+                            <h4>Ціни</h4>
+                            <p>
+                                Вартість години – 150 грн.<br>
+                                Мінімальне замовлення по Киеву 450 грн. (2 години +<br>
+                                подача з точки А в точку В). Доп.точка 100 грн.<br>
+                                Виїзд за КиЇв — 7,5 гр/км кругорейс
+                            </p>
+                        </div>
+                        <div class="button-area">
+                            <button class="btn">Зробити замовлення</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    Работа в ночное время - aвто от 800 грн., грузчик 150 грн./час
+                    (такси грузчику не включено)
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="reviews">
+                <h2>Отзывы</h2>
+                <div class="reviews-button">
+                  <div class="reviews-holder">
+                      <button class="btn-google">Google отзывы (28)</button>
+                      <button class="btn-reviews">Еще отзывы (16)</button>
+                  </div>
+                </div>
+                <div class="feedback-slider">
+                    <div>
+                        <div class="comments-area">
+                            <div class="commentator">
+                                <div class="commentator-photo">
+                                    <img src="../images/face.png" alt="face">
+                                    <h5>Юлия Иванова</h5>
+                                </div>
+                                <p class="comments">
+                                    Спочатку розбирається меблі, потім компактно складається і упаковується. Побутова техніка упаковується в надійну
+                                    тару. Предметів, як правило, виявляється набагато більше, ніж думають господарі. Після транспортування вантаж
+                                    збирають, роблять розстановку за бажанням клієнта.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>your content</div>
+                    <div>your content</div>
+                </div>
+                <div class="review-button">
+                    <button class="btn">Написать отзыв</button>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="weekdays">
+                <h2>Наши будни</h2>
+                <div class="weekdays-photo">
+                    <div><img src="../images/slide-photo.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo-2.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo-3.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo-4.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo-2.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo-3.png" alt="photo"></div>
+                    <div><img src="../images/slide-photo-4.png" alt="photo"></div>
+                </div>
+                <div class="radius-left"></div>
+                <div class="radius-right"></div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="questions">
+                <h2>Частые вопросы</h2>
+                <div class="guestions-area">
+                    <div id="questions-holder">
+                        <h5>
+                            Своєчасне прибуття і виконання робіт у термін?
+                        </h5>
+                        <div>
+                            <p>
+                                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                            </p>
+                        </div>
+                        <h3>
+                            Своєчасне прибуття і виконання робіт у термін?
+                        </h3>
+                        <div>
+                            <p>
+                                Спочатку розбирається меблі, потім компактно складається і упаковується. Побутова техніка упаковується в
+                                надійну тару. Предметів, як правило, виявляється набагато більше, ніж думають господарі. Після
+                                транспортування вантаж збирають, роблять розстановку за бажанням клієнта.
+                            </p>
+                        </div>
+                        <h5>
+                            Своєчасне прибуття і виконання робіт у термін?
+                        </h5>
+                        <div>
+                            <p>
+                                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions-photo">
+                        <img src="../images/questions-photo.png" alt="questions-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="our-blog">
+                <h2>Наш блог</h2>
+                <div class="our-blog-photo">
+                    <div class="our-blog-holder">
+                        <img src="../images/photo-blog.png" alt="photo">
+                        <p ><p class="date">19.01.2020</p>Відео звіт квартирного переїзду</p>
+                        <button class="btn-blog">НОВИНИ</button>
+                    </div>
+                    <div class="our-blog-holder">
+                        <img src="../images/photo-blog-2.png" alt="photo">
+                        <p class="date-holder-t"><p class="date">19.01.2020</p>Топ помилок та запитань: Як
+                        обрати склад для зберігання речей?</p>
+                    </div>
+                    <div class="our-blog-holder">
+                        <img src="../images/photo-blog-3.png" alt="photo">
+                        <p class="date-holder-t"><p class="date">19.01.2020</p>Топ помилок та запитань: Як
+                        обрати склад для зберігання речей?</p>
+                        <button class="btn-blog-2">ПОРАДИ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer-contact">
+            <section class="container">
+                <div class="contact-holder">
+                    <h3>
+                        Доверьте сложную работу нам!
+                    </h3>
+                    <form class="contact-form-holder" action="#">
+                        <div class="form-group">
+                            <input type="text" id="Name" placeholder="Name" name="name..." value="">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="tel" placeholder="+ 38 (___) ___ - __ - __" name="tel" value="">
+                        </div>
+                    </form>
+                    <div class="contact-button-holder">
+                        <button class="btn">Заказать звонок</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+    <div class="services-footer">
+        <section class="container">
+            <div class="service-footer-holder">
+               <div class="moving-holder">
+                   <h2 class="heading">Переезды</h2>
+                   <ul>
+                       <li>
+                           <a href="#">Квартирны переезд</a>
+                       </li>
+                       <li>
+                           <a href="#">Офисный переезд</a>
+                       </li>
+                       <li>
+                           <a href="#">Дачный переезд</a>
+                       </li>
+                       <li>
+                           <a href="#">Переезд дома</a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="transportation-holder">
+                   <h2 class="heading">Перевозкы</h2>
+                   <ul>
+                       <li>
+                           <a href="#">Грузовое закси</a>
+                       </li>
+                       <li>
+                           <a href="#">Грузоперевозки</a>
+                       </li>
+                       <li>
+                           <a href="#">Перевозка мебели</a>
+                       </li>
+                       <li>
+                           <a href="#">Перевозка техники</a>
+                       </li>
+                       <li>
+                           <a href="#">Перевозка вещей</a>
+                       </li>
+                       <li>
+                           <a href="#">Вывоз строительного мусора</a>
+                       </li>
+                       <li>
+                           <a href="#">Услуги грузчиков</a>
+                       </li>
+                       <li>
+                           <a href="#">Переезды</a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="contacts-holder">
+                   <h2 class="heading">Контакты</h2>
+                   <ul>
+                       <li>
+                           <a class="phone-number" href="tel:+38(93)180-30-09">
+                               <img src="../images/icon-tel.png" alt="icon">
+                               <span>+380(93)180-30-09</span>
+                               <img class="viber" src="../images/viber.png" alt="viber">
+                           </a>
+                       </li>
+                       <li>
+                           <a class="phone-number" href="tel:+380(66)180-30-09">
+                               <img src="../images/vodafone.png" alt="icon">
+                               <span>+380(66)180-30-09</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a class="phone-number" href="tel:+380(66)180-30-09">
+                               <img src="../images/kyivstar.png" alt="icon">
+                               <span>+380(96)180-30-09</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a class="phone-number" href="mail:info@tetristrans.com.ua">
+                               <img src="../images/mail.png" alt="icon">
+                               <span>info@tetristrans.com.ua</span>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="payment-holder">
+                   <h2 class="heading">Оплата:</h2>
+                   <ul>
+                       <li>
+                           <div class="card">
+                               <a  class="visa" href="#">
+                                   <img src="../images/visa.png" alt="visa">
+                               </a>
+                               <a class="mastercard" href="#">
+                                   <img src="../images/mastercard.png" alt="mastercsrd">
+                               </a>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+            <div class="footer-end">
+                <h2>© Все права защищены 2020</h2>
+            </div>
+        </section>
+    </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $('.menu-btn').on('click',function(e){
+                e.preventDefault;
+                $(this).toggleClass('menu-btn-active')
+                $(".mobile-menu-navigation").toggleClass('show-menu')
+            });
+
+        </script>
+    <script>
+        $( function() {
+            $( "#questions-holder" ).accordion();
+            $( "#mobile-accordion" ).accordion();
+        } );
+    </script>
+    <script>
+        $('.feedback-slider').slick();
+
+        $('.weekdays-photo').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1250,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+        ]
+        });
+    </script>
+</body>
+</html>
